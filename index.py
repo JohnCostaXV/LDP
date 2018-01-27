@@ -86,6 +86,6 @@ async def on_member_join(member):
     
 
 
-client.run("NDA2MjI5MTQ2MTgwNzgwMDQy.DUv57g.NIs1mcG3rh4zgbXyinuptGtOIK0") # Liga o bot
+client.run("") # Liga o bot
 
 
