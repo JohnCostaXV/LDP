@@ -59,9 +59,6 @@ async def on_message(message):
         if commandos.__contains__(invoke):
             await commandos.get(invoke).ex(args, message, client, invoke)
 
-    def __init__(self, bot):
-        self.bot = bot
-
 
 
 
