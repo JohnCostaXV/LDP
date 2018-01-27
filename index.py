@@ -61,23 +61,6 @@ async def on_message(message):
 
     def __init__(self, bot):
         self.bot = bot
-@client.event
-async def on_member_join(member):
-    userid = member.id
-    username = member.name
-    discriminator = member.discriminator
-    useravatar = member.avatar_url
-    embed=discord.Embed(
-        title=" ", 
-        description="Olá <@{userid}>, seja bem vindo A Liga dos Programadores!", 
-        color=0x7289da
-    )
-    embed.set_author(
-        name="{username}#{discriminator}",
-        icon_url=useravatar,
-        )
-    serverchannel = member.server.default_channel
-    await client.send_message(client.get_channel("383418985443753988"),embed=embed)
 
 
 
