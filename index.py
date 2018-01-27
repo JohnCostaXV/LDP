@@ -14,7 +14,7 @@ commandos = {
     "clear": cmd_clear,
     "userinfo": cmd_userinfo,
     "ban": cmd_ban,
-    "teste": cmd_set_mute_role,
+   # "teste": cmd_set_mute_role,
 
 }
 
