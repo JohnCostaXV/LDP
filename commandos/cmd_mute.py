@@ -4,15 +4,6 @@ import pymongo
 from pymongo import MongoClient
 
 
-#  overwrite = message.channel.overwrites_for(user) or \
-        #discord.PermissionOverwrite()
-      #  overwrite.send_messages = False
-       # await client.edit_channel_permissions(
-       #     message.channel,
-        #    user,
-        #    overwrite
-        #)
-        #await client.send_message(message.channel, "👌 {}#{} foi mutado com sucesso".format(user.name, user.discriminator))
 
 async def ex(args, message, client, invoke):
     mongocli = MongoClient('localhost', 27017)
