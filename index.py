@@ -6,7 +6,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 
 import config
 # Comandos
-from commandos import cmd_ping, cmd_clear, cmd_userinfo, cmd_ban, cmd_mute, cmd_set_mute_role
+from commandos import cmd_ping, cmd_clear, cmd_userinfo, cmd_ban, cmd_mute
 
 commandos = {
 
@@ -14,7 +14,7 @@ commandos = {
     "clear": cmd_clear,
     "userinfo": cmd_userinfo,
     "ban": cmd_ban,
-   # "teste": cmd_set_mute_role,
+    "mute": cmd_mute,
 
 }
 
@@ -24,32 +24,11 @@ client = discord.Client(game=discord.Game(name=f"Estou sem reniciar"))
 # Prefixo do bot
 prefix = "?"
 
-class Object(object):
-    pass
-
-def init_funcs(client):
-    # MySQL
-    global cursor, engine, Session
-    db = 'ldp_dev'
-    engine = create_engine('mysql+pymysql://localhost/{}?charset=utf8mb4'.format(db), encoding='utf8')
-    session_factory = sessionmaker(bind=engine)
-    Session = scoped_session(session_factory)
-    client.mysql = Object()
-    engine = client.mysql.engine = engine
-    cursor = client.mysql.cursor = get_cursor
-
-
-@property
-def get_cursor(self):
-    return Session()
 
 
 @client.event
 async def on_ready():
-	#print("Eu estou vivo!")
-	#print("Meu nome é {} e meu id foi definido como {}.".format(
-	#	client.user.name, client.user.id))
-    init_funcs(client)
+
 
 @client.event
 async def on_message(message):
