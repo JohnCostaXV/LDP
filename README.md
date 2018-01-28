@@ -22,3 +22,12 @@
 ?clear @quantia ```Limpa certa quantia de mensagens do chat```
 
 ###### O bot esta em constante desenvolvimento, funções podem ser adicionadas e removidas.
+
+
+
+
+
+
+
+
+####### Parabéns ao Zagrion que descobriu o que as siglas significam
