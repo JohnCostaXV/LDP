@@ -21,6 +21,7 @@
 
 ?tempmute @user tempo(em segundos) ```Muta um usuario por um certo tempo```
 
+?clearuser @user
 ###### O bot esta em constante desenvolvimento, funções podem ser adicionadas e removidas.
 
 
