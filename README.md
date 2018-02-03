@@ -19,7 +19,7 @@
 
 ?userinfo @user ```Mostra alguns dados sobre o usuario```
 
-?clear @quantia ```Limpa certa quantia de mensagens do chat```
+?tempmute @user tempo(em segundos) ```Muta um usuario por um certo tempo```
 
 ###### O bot esta em constante desenvolvimento, funções podem ser adicionadas e removidas.
 
