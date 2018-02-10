@@ -4,24 +4,24 @@
   </div>
 
 
-## Comandos em geral
+## All commands
 
-###### Anotação: o prefixo do bot por padrão é ```?``` mas você pode customizar 
+###### Anotação: the bot prefix is ```?``` 
 
-?softban @user ```Expulsa o usuario removendo todas as mensagens```
-
-
-?mute @user ```Tira a permissão do user falar no chat que o comando foi executado```
+?softban @user ``Kick the user and clear all recent message```
 
 
-?ban @user ```Como já diz, aplica um banimento no usuario```
+?mute @user ```Mute the user ```
 
 
-?userinfo @user ```Mostra alguns dados sobre o usuario```
+?ban @user ```Ban a user```
 
-?tempmute @user tempo(em segundos) ```Muta um usuario por um certo tempo```
 
-?clearuser @user
+?userinfo @user ```Show some data of the user```
+
+?tempmute @user time(in seconds) ```Temp mute a user```
+
+?clearuser @user ``` Clear messages of a user```
 ###### O bot esta em constante desenvolvimento, funções podem ser adicionadas e removidas.
 
 
