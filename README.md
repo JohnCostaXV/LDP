@@ -8,7 +8,7 @@
 
 ###### Anotação: the bot prefix is ```?``` 
 
-?softban @user ``Kick the user and clear all recent message```
+?softban @user ```Kick the user and clear all recent message```
 
 
 ?mute @user ```Mute the user ```
