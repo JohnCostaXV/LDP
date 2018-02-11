@@ -1,5 +1,6 @@
 import discord
 import asyncio
+<<<<<<< HEAD
 import time
 import os
 import random
@@ -10,15 +11,22 @@ start_time = time.time()
 
 
 
+=======
+>>>>>>> 078b07368765b7e1cb0784986305ebd934bada8e
 from discord import Embed
 
 
 import config
+<<<<<<< HEAD
 
 
 # Comandos
 from commandos import cmd_ping, cmd_clear, cmd_userinfo, cmd_ban, cmd_mute, cmd_softban, cmd_clearuser, cmd_tempmute, cmd_help
 
+=======
+# Comandos
+from commandos import cmd_ping, cmd_clear, cmd_userinfo, cmd_ban, cmd_mute
+>>>>>>> 078b07368765b7e1cb0784986305ebd934bada8e
 
 commandos = {
 
@@ -27,10 +35,13 @@ commandos = {
     "userinfo": cmd_userinfo,
     "ban": cmd_ban,
     "mute": cmd_mute,
+<<<<<<< HEAD
     "softban": cmd_softban,
     "clearuser": cmd_clearuser,
     "tempmute": cmd_tempmute,
     "help": cmd_help,
+=======
+>>>>>>> 078b07368765b7e1cb0784986305ebd934bada8e
 
 }
 
@@ -42,6 +53,7 @@ prefix = "?"
 
 
 
+<<<<<<< HEAD
 
 @client.event
 async def on_ready():
@@ -56,19 +68,28 @@ async def on_ready():
     #for x in range(len(servers)):
        # print(' ' + servers[x-1].name)
 
+=======
+@client.event
+async def on_ready():
+>>>>>>> 078b07368765b7e1cb0784986305ebd934bada8e
 
 
 @client.event
 async def on_message(message):
+<<<<<<< HEAD
 
         
     if message.content.startswith(config.PREFIX):
 
         
+=======
+    if message.content.startswith(config.PREFIX):
+>>>>>>> 078b07368765b7e1cb0784986305ebd934bada8e
         invoke = message.content[len(config.PREFIX):].split(" ")[0]
         args = message.content.split(" ")[1:]
         if commandos.__contains__(invoke):
             await commandos.get(invoke).ex(args, message, client, invoke)
+<<<<<<< HEAD
             livecmds = client.get_channel('410144656857366529')
             await client.send_message(livecmds, "`{} >` **{}**: `{}`".format(message.server.name, message.author.name, message.content))
 
@@ -130,5 +151,16 @@ async def on_message_delete(message):
         return
 
 client.run(".") # Liga o bot
+=======
+
+
+
+
+
+    
+
+
+client.run("") # Liga o bot
+>>>>>>> 078b07368765b7e1cb0784986305ebd934bada8e
 
 
