@@ -32,3 +32,5 @@
 
 
 ###### Parabéns ao Zagrion que descobriu o que as siglas significam
+
+###### Any problem? join here https://discord.gg/dbZDN4x
